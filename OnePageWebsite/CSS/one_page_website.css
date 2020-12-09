@@ -1,11 +1,58 @@
-body {
-    font-family: monospace, sans-serif;
-    font-size: 100%;
+html{
+	scroll-behavior: smooth;
 }
 
+#contentbody {
+	background-color: #f7e948;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	
+
+}
+.charactergroup {
+	margin: auto 50px;
+}
+
+#banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+nav .sticky{
+	position: fixed; 
+	top:0;
+	width:100%;
+}
+
+.buttons {
+	background-color: #ff808b;
+
+}
+
+.card-container:hover .image {
+	opacity:0.3;
+}
+
+.card-container:hover .card-overlay {
+	opacity: 1;
+}
+
+.card-overlay {
+	opacity: 0;
+	transition: 0.5 ease;
+	position: absolute;
+	text-align: center
+
+}
+
+
+
+}
 input {
     width: 50%;
     margin: 5px;
     border: 1px solid gray;
     border-radius: 3px;
-}
