@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Ode to Spongebob Squarepants</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body id="contentbody" onscroll="stickyNav()">
+
+    <img id="banner" src="./Images/spongebobbanner.jpg" />
+
+    <!--NAVIGATION-->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#characters">Characters</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Seasons
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Season 1-5</a>
+                        <a class="dropdown-item" href="#">Season 6-10</a>
+                        <a class="dropdown-item" href="#">Season 11-13</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Movies</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#joinUs">Join the Fanclub</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="https://www.google.com/">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="buttons btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--END NAVIGATION-->
+    <!-- TO TOP BUTTON-->
+    <button onclick="toTop()" id="toTopBtn" title="Go to top" class=" btn buttons">Up, Up &amp; Away!</button>
+
+    <!--HOME-->
+    <div class="pagecontent">
+        <header>
+            <h1 id="home">Welcome to Bikini Bottom!</h1>
+            <p>
+                Ohhhhhh! Who lives in a pineapple under the sea?
+                SpongeBob SquarePants!
+                Absorbent and yellow and porous is he!
+                SpongeBob SquarePants!
+            </p>
+            <p>
+                If nautical nonsense be something you wish...
+                SpongeBob SquarePants!
+                Then drop on the deck and flop like a fish!
+                SpongeBob Squarepants!
+                Ready?
+            </p>
+        </header>
+
+        <!-- CHARACTERS -->
+        <div class="characterSection">
+            <h1 id="characters">Characters</h1>
+            <div class="card-columns charactergroup">
+                <!--SPONGEBOB-->
+                <a href="https://hero.fandom.com/wiki/SpongeBob_SquarePants" target="_blank">
+                    <div class="card card-container">
+                        <img src="./Images/spongebob.png" class="card-img-top imagecard" alt="Spongebob Squarepants">
+                        <div class="card-overlay">
+                            <div class="card-text">Spongebob Squarepants</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--GARY-->
+                <a href="https://hero.fandom.com/wiki/Gary_The_Snail" target="_blank">
+                    <div class="card card-container">
+                        <img src="./Images/gary.jpg" class="card-img-top imagecard" alt="Gary The Snail">
+                        <div class="card-overlay">
+                            <div class="card-text">Gary The Snail</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--PATRICK-->
+                <a href="https://hero.fandom.com/wiki/Patrick_Star" target="_blank">
+                    <div class="card card-container">
+                        <img src="./Images/patrick.png" class="card-img-top imagecard" alt="Patrick Star">
+                        <div class="card-overlay">
+                            <div class="card-text">Patrick Star</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--SQUIRWARD-->
+                <a href="https://hero.fandom.com/wiki/Squidward_Tentacles" target="_blank">
+                    <div class="card card-container">
+                        <img src="./Images/squidward.png" class="card-img-top imagecard" alt="Squidward Tentacles">
+                        <div class="card-overlay">
+                            <div class="card-text">Squidward Tentacles</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--MR KRABS-->
+                <a href="https://hero.fandom.com/wiki/Mr._Krabs" target="_blank">
+                    <div class="card card-container">
+                        <img src="./Images/mrkrabs.png" class="card-img-top imagecard" alt="Mr Eugene Krabs">
+                        <div class="card-overlay">
+                            <div class="card-text">Mr Eugene Krabs</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--Plankton-->
+                <a href="https://hero.fandom.com/wiki/Sheldon_J._Plankton" target="_blank">
+                    <div class="card card-container">
+                        <img src="./Images/plankton.png" class="card-img-top imagecard" alt="Sheldon Plankton">
+                        <div class="card-overlay">
+                            <div class="card-text">Sheldon J. Plankton</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--Sandy-->
+                <a href="https://hero.fandom.com/wiki/Sandy_Cheeks" target="_blank">
+                    <div class="card card-container">
+                        <img src="./Images/sandy.png" class="card-img-top imagecard" alt="Sandy Cheeks">
+                        <div class="card-overlay">
+                            <div class="card-text">Sandy Cheeks</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <!-- END CHARACTERS-->
+        <!--CONTACT FORM-->
+        <div class="jumbotron" id="joinUs">
+            <form action="" method="post">
+                <h1 class="form-title">Join Us!</h1>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="inputEmail3" class="col-sm col-form-label">First Name</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputFName" placeholder="First Name" name="FirstName">
+                        </div>
+                    </div>
+                    <div class="form-group col">
+                        <label for="inputPassword3" class="col-sm col-form-label">Last Name</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputLName" placeholder="Last Name" name="LastName">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="inputEmail3" class="col-sm col-form-label">Email</label>
+                    <div class="col-sm">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="email@bikinibottom.com" name="Email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Please click to subscribe
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <div class="col-sm-10">
+                        <button type="submit" class="buttons btn ">Join the party!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--END CONTACT FORM-->
+    <footer>
+        <div id="footer">Bikini Bottom Inc. &copy <span id="year"></span></div>
+    </footer>
+
+    <script src="./Scripts/scripts.js"></script>
+</body>
+</html>
+
