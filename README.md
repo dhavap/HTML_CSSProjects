@@ -14,7 +14,10 @@ This is a fan site that contains a section on characters from the cartoon as wel
 - "To top" button appears when the user scrolls down
 - Year is dynamically updated in the footer using Javascript.  
 
+### Future plans
+- React-ify the site
+- Scrape data for information about different characters
+
 ![Spongebob Squarepants fan site](/SpongebobFansite/Images/spongebobsite.jpg)
 
-## [Cinema](https://github.com/dhavap/HTML_CSSProjects/tree/master/bootstrap4_project)
-This is a one-page site created for a hypothetical cinema. Current movies are displayed along with their timings. Technologies used for this project include Bootstrap. 
+
